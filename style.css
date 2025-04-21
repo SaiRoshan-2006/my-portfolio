@@ -1,0 +1,117 @@
+/* ✨ Particle Background */ 
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0b0b12;
+  z-index: -1;
+}
+
+/* Common CSS for all pages */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0B0C10; /* Deep royal background */
+  color: #E5E5E5; /* Light silver text */
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(145deg, #1A1A2E, #000000); /* Royal gradient */
+  border-bottom: 2px solid #FFD700; /* Gold border */
+}
+
+header img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid #FFD700; /* Gold border */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #FFD700; /* Gold name */
+}
+
+/* 🔥 New styling for the subtitle under your name */
+header p {
+  color: #E5E5E5; /* Light silver */
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0;
+}
+
+nav {
+  text-align: center;
+  padding: 1rem;
+  background-color: #000000; /* Jet black nav */
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #FFD700; /* Gold nav links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #663399; /* Royal purple hover */
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: #1A1A2E; /* Section background */
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+}
+
+h2 {
+  border-bottom: 2px solid #FFD700; /* Gold underlines */
+  padding-bottom: 0.5rem;
+  color: #FFD700;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #000000;
+  border-top: 1px solid #FFD700;
+  color: #E5E5E5;
+}
+
+/* 🖤 Shining Black Class */
+.shining-black {
+  background: linear-gradient(145deg, #0a0a0a, #1c1c1c); /* Subtle glossy shine */
+  color: #FFD700; /* Optional gold text for contrast */
+  border: 1px solid #2c2c2c;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.05), 0 0 20px rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 12px;
+}
+/* ✍️ Typewriter Subtitle Animation */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #f7d038;
+  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+  font-family: 'Courier New', monospace;
+  font-size: 1.5rem;
+  color: #f7d038;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #f7d038 }
+}

@@ -1,0 +1,100 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B. Sai Roshan</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+
+    header, nav, section, footer {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Particle Animation -->
+  <div id="particles-js"></div>
+
+  <!-- Content -->
+  <header>
+    <img src="image.jpg" alt="Profile Photo" class="profile-photo" />
+   <h1>B.Sai Roshan</h1>
+    <div class="typewriter">Just a dreamer with a keyboard — chasing code, chasing greatness...............</div>
+  </header>
+
+  <nav>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Welcome</h2>
+    <div class="shining-black">
+      <p>A student by title, an entrepreneur at heart.
+        <span class="highlight">I’m passionate about turning smart ideas into real ventures.</span></p>
+    </div>
+    
+  </section>
+
+  <footer>
+    <p>&copy;Sai Roshan portfolio</p>
+  </footer>
+
+  <!-- Particle JS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80 },
+        color: { value: "#f1c40f" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#f1c40f",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
